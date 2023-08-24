@@ -5,15 +5,15 @@
 
 /************************* WiFi Access Point *********************************/
 
-#define WLAN_SSID       "SM_HOME_2.4GHZ"
-#define WLAN_PASS       "nesbitrd1"
+#define WLAN_SSID       "" //wifi name
+#define WLAN_PASS       "" //password
 
 /************************* Adafruit.io Setup *********************************/
 
 #define AIO_SERVER      "io.adafruit.com"
 #define AIO_SERVERPORT  1883                   // use 8883 for SSL
-#define AIO_USERNAME  "RitikaSM"
-#define AIO_KEY       "aio_uDhb15Kp62RBu8GSdSzRVJpnabar"
+#define AIO_USERNAME  ""              
+#define AIO_KEY       ""
 
 
 
