@@ -113,38 +113,11 @@ void loop() {
   Adafruit_MQTT_Subscribe *subscription;
   while ((subscription = mqtt.readSubscription(5000))) {
     if (subscription == &sw1) {
-      //Serial.print(F("Got: "));
-      //Serial.println((char *)sw1.lastread);
-      //digitalWrite(led1, HIGH);
-
-      stringOne = (char *)sw1.lastread;
-      Serial.print(F("stringOne: "));
-      Serial.println(stringOne);
-
-      if (stringOne == "ON") {
-        digitalWrite(led1, HIGH);
-      }
-      if (stringOne == "OFF") {
-        digitalWrite(led1, LOW);
-      }
+     
     }
 
     if (subscription == &sw2) {
-      //Serial.print(F("Got: "));
-      //Serial.println((char *)sw2.lastread);
-      //digitalWrite(led2, HIGH);
-
-      stringTwo = (char *)sw2.lastread;
-      Serial.print(F("stringTwo: "));
-      Serial.println(stringTwo);
-
-      if (stringTwo == "ON") {
-        digitalWrite(led2, HIGH);
-      }
-      if (stringTwo == "OFF") {
-        digitalWrite(led2, LOW);
-      }
-
+     
     }
   }
 
